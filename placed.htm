@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Place Order</title>
+        <link rel="stylesheet" type="text/css" href="major.css">
+        <link rel="icon" type="image/png" href="cart.png">
+        <script>
+            function placed(){
+                var address = document.getElementById("add").value
+                if(address.length>0){
+                alert("Your Order has been placed!")}}
+        </script>
+    </head>
+    <body>
+            <ul>
+                    <li><a href="home.htm">Go back Home</a> </li>          
+                </ul>
+                <br><br>
+        <div style="height: auto; text-align: center; border: 2px outset lightseagreen; color: lightseagreen; font-family: Arial narrow; padding: 10px;">
+              
+            <form>Please enter your address: <br><br> 
+                <textarea max="500" placeholder="Address" name="addr" required style="height: 50px; width: 300px; font-family: Verdana" id="add"></textarea><br><br>
+                <input type="submit" onclick="placed()" value="Place Order" style="border-radius: 12px;padding: 16px; background-color: lightseagreen; color: white;"/>
+            </form>        
+        </div>
+        <div class="fixed">
+            Major Project. Done by: Ekanshi Agrawal
+        </div>
+    </body>
+</html>
+        
