@@ -1,0 +1,90 @@
+<html>
+<head>
+	<link rel="icon"; type="image/png"; href="donut.png">
+	<style>
+	
+		.myform{
+				font-family:"Lucida Sans Unicode";
+				width:50%;
+				padding: 2px;
+				}
+		.myform * {
+				box-sizing:border-box;	
+				}
+		.myform label{
+			padding: 1px;
+			font-weight: bold;
+			text-align: left;
+			display:block;}
+		.myform button{ border-radius:24px;
+						background-color: pink;
+						max-width: 25%;
+						height: 50px;
+						padding: 3px;
+						margin-left = 14cm;
+						}
+		.myform button:hover{
+								background: lightblue;
+								cursor:pointer;
+							}
+		.myform .one { 
+						margin-left:0px; float:right; width = 50%;
+					}
+	</style>
+</head>
+<body bgcolor="#ffe6f0">
+	<div align="center"><img src="donut.png" width="5%"></div>
+	<h3 style="font-family:verdana" align="center"> MAKE YOUR OWN DONUT!</h3>
+	<h5 align="center"> And we'll make it for you!</h5>
+	<div align="center">
+	<form class="myform">
+	<p>
+		<label>Name: <input type="text" name="customer_name" class="one" required></label>
+	</p>
+	<p>
+		<label>Phone number: <input type="tel" name="phone_number"  class="one" required></label>
+	</p>
+	<p>
+		<label>Address: <input type="text" name="address" class="one" required></label>
+	</p>
+	
+	<fieldset>
+		<legend>Type of bun:</legend>
+		<p><label><input type="radio" name="bun" required value="Soft"> Soft (Regular)</label></p>
+		<p><label><input type="radio" name="bun" required value="jfilled"> Jelly filling</label></p>
+		<p><label><input type="radio" name="bun" required value="cfilled"> Chocolate filling</label></p>
+		<p><label><input type="radio" name="bun" required value="hard"> Hard bread</label></p>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Icing:</legend>
+		<p><label><input type="radio" name="ice" required value="Chocolate"> Chocolate</label></p>
+		<p><label><input type="radio" name="ice" required value="jelly"> Jelly</label></p>
+		<p><label><input type="radio" name="ice" required value="Glaze"> Glaze</label></p>
+		<p><label><input type="radio" name="ice" required value="straw"> StrawBerry </label></p>
+		<p><label><input type="radio" name="ice" required value="blue"> Blue Smurf </label></p>
+	</fieldset>
+	<fieldset>
+		<legend>Toppings:</legend>
+		<p><label><input type="checkbox" name="top" value="sprinkles"> Sprinkles</label></p>
+		<p><label><input type="checkbox" name="top" value="choc"> chocolate crumbs</label></p>
+		<p><label><input type="checkbox" name="top" value="oreo"> Oreos</label></p>
+	</fieldset>
+	
+	<p>
+		<label> Payment mode:
+			<select id="payment" name="paymentmode">
+				<option value="empty"> -- Select --</option>
+				<option value="cod" required>Cash/card on delivery</option>
+				<option value="paytm" required>Paytm</option>
+				<option value="tez" required>Tez</option>
+			</select>
+		</label>
+	</p>
+	<p><label>Any special requests? <textarea name="Requests" maxlength="140" align="middle"></textarea>
+	</label></p><br>
+	<button> I want my Donut!</button>
+	</form>
+	</div>
+</body>
+</html>

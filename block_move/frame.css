@@ -1,0 +1,28 @@
+.row{
+	width:400px;
+	height: 400px;
+	position:relative;
+	background: #456;
+}
+.col1{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: #3F0;
+}
+.col2{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	background-color: #3F0;
+	
+}
+body{
+	background-color: #eee;
+}
+button{
+	background-color: #97f688;
+	border-radius: 6px;
+	height: 30px;
+	width: 100px;
+}

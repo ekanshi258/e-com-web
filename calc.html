@@ -1,0 +1,40 @@
+<!--CALCULATOR-->
+<html>
+<head>
+	<style>
+			td{ padding: 7px}
+			
+	</style>
+</head>
+<body align="center" bgcolor="#341c35">
+	<h3 style="align:center; font-family:Helvetica; color:white"><u>Calculator</u></h3>
+	<hr color="pink"><br>
+	<div align="center">
+	<form id="f" style="border: 1px solid pink">
+		<br><input type="text" id="t1"><br>
+		<table align="center" >
+			<tr><td><input type="button" id="b1" value="1" onclick="f.t1.value+=1"></td>
+				<td><input type="button" id="b2" value="2" onclick="f.t1.value+=2"></td>
+				<td><input type="button" id="b3" value="3" onclick="f.t1.value+=3"></td>
+				<td><input type="button" id="add" value="+" onclick="f.t1.value=f.t1.value+'+'"></td>
+			</tr>
+			<tr><td><input type="button" id="b4" value="4" onclick="f.t1.value+=4"></td>
+				<td><input type="button" id="b5" value="5" onclick="f.t1.value+=5"></td>
+				<td><input type="button" id="b6" value="6" onclick="f.t1.value+=6"></td>
+				<td><input type="button" id="sub" value="-" onclick="f.t1.value=f.t1.value+'-'"></td>
+			</tr>
+			<tr><td><input type="button" id="b7" value="7" onclick="f.t1.value+=7"></td>
+				<td><input type="button" id="b8" value="8" onclick="f.t1.value+=8"></td>
+				<td><input type="button" id="b9" value="9" onclick="f.t1.value+=9"></td>
+				<td><input type="button" id="mul" value="*" onclick="f.t1.value=f.t1.value+'*'"></td>
+			</tr>
+			<tr><td><input type="button" id="c" value="C" onclick="f.t1.value=''"></td>
+				<td><input type="button" id="b0" value="0" onclick="f.t1.value+=0"></td>
+				<td><input type="button" id="eq" value="=" onclick="f.t1.value=eval(f.t1.value)"></td>
+				<td><input type="button" id="div" value="/" onclick="f.t1.value=f.t1.value+'/'"></td>
+			</tr>
+		</table>
+		<br>
+	</form></div>
+</body>
+</html>
