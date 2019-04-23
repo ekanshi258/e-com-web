@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> Cart </title>
+        <link rel="stylesheet" type="text/css" href="major.css">
+        <link rel="icon" type="image/png" href="cart.png">
+        <script language="JavaScript">
+            function getParams(){
+                var idx = document.URL.indexOf('?');
+                var params = new Array();
+                if (idx != -1) {
+                    var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                    for (var i=0; i<pairs.length; i++){
+                        nameVal = pairs[i].split('=');
+                        params[nameVal[0]] = nameVal[1];
+                    }
+                }
+                return params;
+            }
+            </script>
+
+    </head>
+    <body>
+            <ul>
+                    <li><a href="home.htm">Welcome to Ecom Web!</a> </li>
+                              
+            </ul>
+            <div style="text-align: center">
+                    <div style="width: 50% auto;font-family: Arial Narrow; color: lightseagreen; font-size: 24px; border: 1px solid lightseagreen; padding: 12px 12px">
+                        - CART -
+                    </div></div>
+            <div style="margin-left: 25%; margin-top: 100px ;width: 50%;text-align: center ;font-family: Arial Narrow; color: lightseagreen; font-size: 24px;">
+                <script>params = getParams();
+            
+            name = unescape(params["passname"]);
+            price = unescape(params["passprice"]);
+
+            
+            document.write("Product Name = " + name + "<br>");
+            document.write("Product Price = " + price + "<br>");
+            </script>
+            </div>
+            <br><br>
+            <div style="width: 100%; text-align: center;">
+                <a href="placed.htm">
+                <input type="button" value="Place Order" style="border-radius: 12px;padding: 16px; background-color: lightseagreen; color: white;"></a>
+            </div>
+            <div class="fixed">
+                Major Project. Done by: Ekanshi Agrawal
+            </div>
+    </body>
+</html>
